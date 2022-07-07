@@ -1,1 +1,111 @@
+html { 
+    background: url("./images/quiz.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-size: large;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    color: white;
+}
+
+#quiz {
+    color: red;
+    text-decoration: none;
+}
+        
+#container {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    
+}
+#startTimer {
+    background-color: red;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+#questions {
+    margin: 20px;
+}
+
+#timer {
+    float: right;
+}
+
+#back {
+    background-color: red;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 53%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#reset {
+    background-color: red;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 23%;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+}
+
+textarea {
+    width: 88%;
+    margin: 19px;
+}
+
+#Submit {
+    background-color: red;
+    margin-left: 31%;
+    padding: 16px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    margin-top: 10px;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+}
 

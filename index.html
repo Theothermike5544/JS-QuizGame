@@ -1,28 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="assets/style.css">
+
     <title>Test Your Knowledge!</title>
+
 </head>
+
 <body>
-    <a id = "highscore" href="highscores.html">View High Scores!</a>
-    <!-- Container for Quiz View!-->
-    <div id = "wrapper">
-        <!-- Timer-->
+
+    <a id = "quiz" href="scores.html">View High Scores!</a>
+
+    <div id = "container">
+
         <div id = "timer"></div>
-        <!--Start of HTML Code, creation of UL for list of answers, and btn to begin the quiz -->
+
         <div id="questions">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                answers
-                will penalize your score/time by ten seconds!</p>
+
+            <h1>Timed Quiz on Coding Knowledge!</h1>
+
+            <p>Do your best to answer all of the questions within the given time limit. All incorrect responses will be penalized by a 10 second deduction on your time remaining!</p>
+
             <ul id="choicesList"></ul>
+
             <button id="startTimer">Start Quiz</button>
+
         </div>
+
     </div>
+
     <script src = "script.js"></script>
 
 </body>
