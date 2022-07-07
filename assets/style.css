@@ -1,3 +1,4 @@
+/* background image insertion and formatting */
 html { 
     background: url("./images/quiz.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -5,7 +6,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-
+/* body formatting, styling and positioning*/
 body {
     font-size: large;
     font-style: normal;
@@ -109,3 +110,6 @@ li {
     border-top: 1px solid gray;
 }
 
+/* NOTE! */
+/* If time permits, redo position / display and make page mobile responsive with flexbox elements at diff pixel ranges */
+/* NOTE! */

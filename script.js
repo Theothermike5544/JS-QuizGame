@@ -1,3 +1,5 @@
+// Objects, Arrays for shell of the quiz
+
 var questions = [
     {
         title: "All of the following are JavaScript Date Types EXCEPT:",
@@ -27,11 +29,12 @@ var questions = [
   
   ];
 
-
+// specific variables being declared and defined to be referenced and called on
+  // score
   var score = 0;
-  
+  // index score
   var qNum = 0;
-  
+  // exact time
   var exactTime = document.querySelector("#timer");
   
   var timer = document.querySelector("#startTimer");
@@ -39,15 +42,15 @@ var questions = [
   var questionsDiv = document.querySelector("#questions");
   
   var container = document.querySelector("#container");
-  
+  // countdown time start
   var secondsLeft = 75;
-
+  // index time
   var keepCost = 0;
-
+  // penalty incurred for wrong answer
   var cost = 15;
-
+  // creates a new element for list
   var ulNew = document.createElement("ul");
-  
+  // starting timer on click and displays time left
   timer.addEventListener("click", function () {
     if (keepCost === 0) {
         keepCost = setInterval(function () {
@@ -63,7 +66,7 @@ var questions = [
     }
     render(qNum);
   });
-  
+  // creates questions to be displayed and available answers
   function render(qNum) {
     
     questionsDiv.innerHTML = "";
@@ -83,7 +86,7 @@ var questions = [
         listItem.addEventListener("click", (compare));
     })
   }
-  
+  // comparing answer to the available choices
   function compare(event) {
     var element = event.target;
   
@@ -102,7 +105,7 @@ var questions = [
         }
   
     }
-  
+    // pulls what question is actively is being worked on
     qNum++;
   
     if (qNum >= questions.length) {
@@ -114,7 +117,7 @@ var questions = [
     questionsDiv.appendChild(createDiv);
   
   }
-  
+  // appends page to show result of quiz and input name or initials
   function allDone() {
     questionsDiv.innerHTML = "";
     exactTime.innerHTML = "";
@@ -132,7 +135,7 @@ var questions = [
   
     questionsDiv.appendChild(createP);
   
- 
+    // formula for converting the time remaining into the scoring used for recording
     if (secondsLeft >= 0) {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
@@ -142,7 +145,7 @@ var questions = [
         questionsDiv.appendChild(createP2);
     }
   
-  
+    // labeling, inputing, submiting from quiz to scores page.
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
@@ -165,7 +168,7 @@ var questions = [
   
     questionsDiv.appendChild(createSubmit);
   
-  
+  // listener to hold and capture as well as store info being transmitting it to the other page
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
   
