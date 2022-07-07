@@ -30,4 +30,4 @@ THEN I can save my initials and score  </br>
 https://theothermike5544.github.io/JS-QuizGame/
 
 ## GitHub Repo URL
-https://github.com/Theothermike5544?tab=repositories
+https://github.com/Theothermike5544/JS-QuizGame
